@@ -1,15 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading;
-using System.Threading.Tasks;
 
 namespace ShambersMicroServicesMultiSoft.ZvonokSoft.ZvonokServices
 {
     internal class TimeDefault
     {
         SoundFunctions soundFunctions = new SoundFunctions();
+        private List<Timer> activeTimers = new List<Timer>(); // Добавлено для хранения таймеров
         public readonly Dictionary<int, TimeSpan> timeList = new Dictionary<int, TimeSpan>
         {
             {1, TimeSpan.Parse("9:00:00")},
@@ -31,26 +29,41 @@ namespace ShambersMicroServicesMultiSoft.ZvonokSoft.ZvonokServices
             {17, TimeSpan.Parse("0:00:00")},
             {18, TimeSpan.Parse("0:00:00")},
         };
+
         private TimeSpan checkday(TimeSpan time)
         {
             DateTime now = DateTime.Now;
             DateTime nextRun = now.Date.Add(time);
-            if (nextRun < now )
+            if (nextRun < now)
             {
                 nextRun = nextRun.AddDays(1);
             }
             return nextRun - now;
         }
+
         private void TimerGen(TimeSpan time)
         {
+            if (time == TimeSpan.Zero) return; // Пропускаем нулевое время
+
             TimeSpan delay = checkday(time);
-            new Timer(_ =>
+            Timer timer = new Timer(_ =>
             {
                 soundFunctions.PlayZvonok();
             }, null, delay, TimeSpan.FromHours(24));
+
+            activeTimers.Add(timer); // Сохраняем таймер
         }
+
         public void TimerDefalut()
         {
+            // Очищаем старые таймеры
+            foreach (var timer in activeTimers)
+            {
+                timer?.Dispose();
+            }
+            activeTimers.Clear();
+
+            // Создаем новые таймеры
             TimerGen(timeList[1]);
             TimerGen(timeList[2]);
             TimerGen(timeList[3]);
@@ -63,7 +76,6 @@ namespace ShambersMicroServicesMultiSoft.ZvonokSoft.ZvonokServices
             TimerGen(timeList[13]);
             TimerGen(timeList[14]);
             TimerGen(timeList[15]);
-
         }
     }
 }
