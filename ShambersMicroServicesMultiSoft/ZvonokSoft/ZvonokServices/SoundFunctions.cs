@@ -1,16 +1,13 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Media;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 
 namespace ShambersMicroServicesMultiSoft.ZvonokSoft.ZvonokServices
 {
     internal class SoundFunctions
     {
-        SoundPaths paths = new SoundPaths();
+        private SoundPaths paths = new SoundPaths();
+
         private void SoundPlayStart(string SoundPath)
         {
             try
@@ -23,6 +20,7 @@ namespace ShambersMicroServicesMultiSoft.ZvonokSoft.ZvonokServices
                 MessageBox.Show(ex.Message.ToString());
             }
         }
+
         private void SoundPlayStop()
         {
             try
@@ -35,31 +33,35 @@ namespace ShambersMicroServicesMultiSoft.ZvonokSoft.ZvonokServices
                 MessageBox.Show(ex.Message.ToString());
             }
         }
+
         private void SoundPlayRepeat(string soundPaths)
         {
             try
             {
                 SoundPlayer soundPlayer = new SoundPlayer(soundPaths);
                 soundPlayer.PlayLooping();
-
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message.ToString());
             }
         }
+
         public void PlayZvonok()
         {
             SoundPlayStart(paths.soundPaths[1]);
         }
+
         public void PlayStop()
         {
             SoundPlayStop();
         }
+
         public void PlayAttention()
         {
             SoundPlayRepeat(paths.soundPaths[2]);
         }
+
         public void TestAttention()
         {
             SoundPlayStart(paths.soundPaths[2]);
