@@ -1,11 +1,11 @@
 ﻿<Window x:Class="ShambersMicroServicesMultiSoft.ZvonokSoft.Zvonok"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:ShambersMicroServicesMultiSoft.ZvonokSoft"
         mc:Ignorable="d"
         Title="Zvonok" Height="530" Width="460">
+
     <Grid Background="Wheat">
         <Grid Background="Wheat" Width="450" Height="500" Margin="5"  HorizontalAlignment="Center" VerticalAlignment="Center">
             <Grid.ColumnDefinitions>
@@ -35,39 +35,39 @@
                         <StackPanel>
                             <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
                                 <TextBlock Text="1." TextAlignment="Center" Margin="5"></TextBlock>
-                                <TextBox Margin="5" Width="50" Name="TimeInt0" Text="Null"></TextBox>
+                                <TextBox Margin="5" Width="50" Name="TimeStart1" Text="Null"></TextBox>
                             </StackPanel>
                             <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
                                 <TextBlock Text="2." TextAlignment="Center" Margin="5"></TextBlock>
-                                <TextBox Margin="5" Width="50" Name="TimeInt1" Text="Null"></TextBox>
+                                <TextBox Margin="5" Width="50" Name="TimeStart2" Text="Null"></TextBox>
                             </StackPanel>
                             <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
                                 <TextBlock Text="3." TextAlignment="Center" Margin="5"></TextBlock>
-                                <TextBox Margin="5" Width="50" Name="TimeInt2" Text="Null"></TextBox>
+                                <TextBox Margin="5" Width="50" Name="TimeStart3" Text="Null"></TextBox>
                             </StackPanel>
                             <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
                                 <TextBlock Text="4." TextAlignment="Center" Margin="5"></TextBlock>
-                                <TextBox Margin="5" Width="50" Name="TimeInt3" Text="Null"></TextBox>
+                                <TextBox Margin="5" Width="50" Name="TimeStart4" Text="Null"></TextBox>
                             </StackPanel>
                             <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
                                 <TextBlock Text="5." TextAlignment="Center" Margin="5"></TextBlock>
-                                <TextBox Margin="5" Width="50" Name="TimeInt4" Text="Null"></TextBox>
+                                <TextBox Margin="5" Width="50" Name="TimeStart5" Text="Null"></TextBox>
                             </StackPanel>
                             <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
                                 <TextBlock Text="6." TextAlignment="Center" Margin="5"></TextBlock>
-                                <TextBox Margin="5" Width="50" Name="TimeInt5" Text="Null"></TextBox>
+                                <TextBox Margin="5" Width="50" Name="TimeStart6" Text="Null"></TextBox>
                             </StackPanel>
                             <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
                                 <TextBlock Text="7." TextAlignment="Center" Margin="5"></TextBlock>
-                                <TextBox Margin="5" Width="50" Name="TimeInt6" Text="Null"></TextBox>
+                                <TextBox Margin="5" Width="50" Name="TimeStart7" Text="Null"></TextBox>
                             </StackPanel>
                             <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
                                 <TextBlock Text="8." TextAlignment="Center" Margin="5"></TextBlock>
-                                <TextBox Margin="5" Width="50" Name="TimeInt7" Text="Null"></TextBox>
+                                <TextBox Margin="5" Width="50" Name="TimeStart8" Text="Null"></TextBox>
                             </StackPanel>
                             <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
                                 <TextBlock Text="9." TextAlignment="Center" Margin="5"></TextBlock>
-                                <TextBox Margin="5" Width="50" Name="TimeInt8" Text="Null"></TextBox>
+                                <TextBox Margin="5" Width="50" Name="TimeStart9" Text="Null"></TextBox>
                             </StackPanel>
                         </StackPanel>
                     </StackPanel>
@@ -76,39 +76,39 @@
                         <StackPanel>
                             <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
                                 <TextBlock Text="1." TextAlignment="Center" Margin="5"></TextBlock>
-                                <TextBox Margin="5" Width="50" Name="TimeInt9" Text="Null"></TextBox>
+                                <TextBox Margin="5" Width="50" Name="TimeEnd1" Text="Null"></TextBox>
                             </StackPanel>
                             <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
                                 <TextBlock Text="2." TextAlignment="Center" Margin="5"></TextBlock>
-                                <TextBox Margin="5" Width="50" Name="TimeInt10" Text="Null"></TextBox>
+                                <TextBox Margin="5" Width="50" Name="TimeEnd2" Text="Null"></TextBox>
                             </StackPanel>
                             <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
                                 <TextBlock Text="3." TextAlignment="Center" Margin="5"></TextBlock>
-                                <TextBox Margin="5" Width="50" Name="TimeInt11" Text="Null"></TextBox>
+                                <TextBox Margin="5" Width="50" Name="TimeEnd3" Text="Null"></TextBox>
                             </StackPanel>
                             <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
                                 <TextBlock Text="4." TextAlignment="Center" Margin="5"></TextBlock>
-                                <TextBox Margin="5" Width="50" Name="TimeInt12" Text="Null"></TextBox>
+                                <TextBox Margin="5" Width="50" Name="TimeEnd4" Text="Null"></TextBox>
                             </StackPanel>
                             <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
                                 <TextBlock Text="5." TextAlignment="Center" Margin="5"></TextBlock>
-                                <TextBox Margin="5" Width="50" Name="TimeInt13" Text="Null"></TextBox>
+                                <TextBox Margin="5" Width="50" Name="TimeEnd5" Text="Null"></TextBox>
                             </StackPanel>
                             <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
                                 <TextBlock Text="6." TextAlignment="Center" Margin="5"></TextBlock>
-                                <TextBox Margin="5" Width="50" Name="TimeInt14" Text="Null"></TextBox>
+                                <TextBox Margin="5" Width="50" Name="TimeEnd6" Text="Null"></TextBox>
                             </StackPanel>
                             <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
                                 <TextBlock Text="7." TextAlignment="Center" Margin="5"></TextBlock>
-                                <TextBox Margin="5" Width="50" Name="TimeInt15" Text="Null"></TextBox>
+                                <TextBox Margin="5" Width="50" Name="TimeEnd7" Text="Null"></TextBox>
                             </StackPanel>
                             <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
                                 <TextBlock Text="8." TextAlignment="Center" Margin="5"></TextBlock>
-                                <TextBox Margin="5" Width="50" Name="TimeInt16" Text="Null"></TextBox>
+                                <TextBox Margin="5" Width="50" Name="TimeEnd8" Text="Null"></TextBox>
                             </StackPanel>
                             <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
                                 <TextBlock Text="9." TextAlignment="Center" Margin="5"></TextBlock>
-                                <TextBox Margin="5" Width="50" Name="TimeInt17" Text="Null"></TextBox>
+                                <TextBox Margin="5" Width="50" Name="TimeEnd9" Text="Null"></TextBox>
                             </StackPanel>
                         </StackPanel>
                     </StackPanel>

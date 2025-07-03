@@ -44,18 +44,18 @@ namespace ShambersMicroServicesMultiSoft.ZvonokSoft.ZvonokServices
             activeTimers.Clear();
 
             // Создаем новые таймеры
-            TimerGen(timeDefault.timeList[0]);
-            TimerGen(timeDefault.timeList[1]);
-            TimerGen(timeDefault.timeList[2]);
-            TimerGen(timeDefault.timeList[3]);
-            TimerGen(timeDefault.timeList[4]);
-            TimerGen(timeDefault.timeList[5]);
-            TimerGen(timeDefault.timeList[9]);
-            TimerGen(timeDefault.timeList[10]);
-            TimerGen(timeDefault.timeList[11]);
-            TimerGen(timeDefault.timeList[12]);
-            TimerGen(timeDefault.timeList[13]);
-            TimerGen(timeDefault.timeList[14]);
+            TimerGen(timeDefault.timeListStart[1]);
+            TimerGen(timeDefault.timeListStart[2]);
+            TimerGen(timeDefault.timeListStart[3]);
+            TimerGen(timeDefault.timeListStart[4]);
+            TimerGen(timeDefault.timeListStart[5]);
+            TimerGen(timeDefault.timeListStart[6]);
+            TimerGen(timeDefault.timeListEnd[1]);
+            TimerGen(timeDefault.timeListEnd[2]);
+            TimerGen(timeDefault.timeListEnd[3]);
+            TimerGen(timeDefault.timeListEnd[4]);
+            TimerGen(timeDefault.timeListEnd[5]);
+            TimerGen(timeDefault.timeListEnd[6]);
         }
     }
 }

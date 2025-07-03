@@ -3,9 +3,6 @@ using System.Windows;
 
 namespace ShambersMicroServicesMultiSoft.ZvonokSoft
 {
-    /// <summary>
-    /// Логика взаимодействия для Zvonok.xaml
-    /// </summary>
     public partial class Zvonok : Window
     {
         private Status status = new Status();
@@ -15,24 +12,24 @@ namespace ShambersMicroServicesMultiSoft.ZvonokSoft
 
         private void TimeUpStatus()
         {
-            TimeInt0.Text = timeDefault.timeList[0].ToString(@"h\:mm");
-            TimeInt1.Text = timeDefault.timeList[1].ToString(@"h\:mm");
-            TimeInt2.Text = timeDefault.timeList[2].ToString(@"h\:mm");
-            TimeInt3.Text = timeDefault.timeList[3].ToString(@"h\:mm");
-            TimeInt4.Text = timeDefault.timeList[4].ToString(@"h\:mm");
-            TimeInt5.Text = timeDefault.timeList[5].ToString(@"h\:mm");
-            TimeInt6.Text = timeDefault.timeList[6].ToString(@"h\:mm");
-            TimeInt7.Text = timeDefault.timeList[7].ToString(@"h\:mm");
-            TimeInt8.Text = timeDefault.timeList[8].ToString(@"h\:mm");
-            TimeInt9.Text = timeDefault.timeList[9].ToString(@"h\:mm");
-            TimeInt10.Text = timeDefault.timeList[10].ToString(@"h\:mm");
-            TimeInt11.Text = timeDefault.timeList[11].ToString(@"h\:mm");
-            TimeInt12.Text = timeDefault.timeList[12].ToString(@"h\:mm");
-            TimeInt13.Text = timeDefault.timeList[13].ToString(@"h\:mm");
-            TimeInt14.Text = timeDefault.timeList[14].ToString(@"h\:mm");
-            TimeInt15.Text = timeDefault.timeList[15].ToString(@"h\:mm");
-            TimeInt16.Text = timeDefault.timeList[16].ToString(@"h\:mm");
-            TimeInt17.Text = timeDefault.timeList[17].ToString(@"h\:mm");
+            TimeStart1.Text = timeDefault.timeListStart[1].ToString(@"h\:mm");
+            TimeStart2.Text = timeDefault.timeListStart[2].ToString(@"h\:mm");
+            TimeStart3.Text = timeDefault.timeListStart[3].ToString(@"h\:mm");
+            TimeStart4.Text = timeDefault.timeListStart[4].ToString(@"h\:mm");
+            TimeStart5.Text = timeDefault.timeListStart[5].ToString(@"h\:mm");
+            TimeStart6.Text = timeDefault.timeListStart[6].ToString(@"h\:mm");
+            TimeStart7.Text = timeDefault.timeListStart[7].ToString(@"h\:mm");
+            TimeStart8.Text = timeDefault.timeListStart[8].ToString(@"h\:mm");
+            TimeStart9.Text = timeDefault.timeListStart[9].ToString(@"h\:mm");
+            TimeEnd1.Text = timeDefault.timeListEnd[1].ToString(@"h\:mm");
+            TimeEnd2.Text = timeDefault.timeListEnd[2].ToString(@"h\:mm");
+            TimeEnd3.Text = timeDefault.timeListEnd[3].ToString(@"h\:mm");
+            TimeEnd4.Text = timeDefault.timeListEnd[4].ToString(@"h\:mm");
+            TimeEnd5.Text = timeDefault.timeListEnd[5].ToString(@"h\:mm");
+            TimeEnd6.Text = timeDefault.timeListEnd[6].ToString(@"h\:mm");
+            TimeEnd7.Text = timeDefault.timeListEnd[7].ToString(@"h\:mm");
+            TimeEnd8.Text = timeDefault.timeListEnd[8].ToString(@"h\:mm");
+            TimeEnd9.Text = timeDefault.timeListEnd[9].ToString(@"h\:mm");
         }
 
         private void UpStatus()

@@ -59,10 +59,10 @@
       <DependentUpon>Zvonok.xaml</DependentUpon>
     </Compile>
     <Compile Include="ZvonokSoft\ZvonokServices\SoundFunctions.cs" />
-    <Compile Include="ZvonokSoft\ZvonokServices\SoundPaths.cs" />
+    <Compile Include="ZvonokSoft\ZvonokServices\Permanents\SoundPaths.cs" />
     <Compile Include="ZvonokSoft\ZvonokServices\Status.cs" />
     <Compile Include="ZvonokSoft\ZvonokServices\TimeChecker.cs" />
-    <Compile Include="ZvonokSoft\ZvonokServices\TimeDefault.cs" />
+    <Compile Include="ZvonokSoft\ZvonokServices\Permanents\TimeDefault.cs" />
     <Compile Include="ZvonokSoft\ZvonokServices\TimeDefaultChecker.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
