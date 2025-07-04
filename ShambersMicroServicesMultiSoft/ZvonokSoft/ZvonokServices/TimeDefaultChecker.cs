@@ -7,7 +7,7 @@ namespace ShambersMicroServicesMultiSoft.ZvonokSoft.ZvonokServices
     internal class TimeDefaultChecker
     {
         private SoundFunctions soundFunctions = new SoundFunctions();
-        private List<Timer> activeTimers = new List<Timer>(); // Добавлено для хранения таймеров
+        private List<Timer> activeTimers = new List<Timer>();
         private TimeDefault timeDefault = new TimeDefault();
 
         private TimeSpan checkday(TimeSpan time)
@@ -23,7 +23,7 @@ namespace ShambersMicroServicesMultiSoft.ZvonokSoft.ZvonokServices
 
         private void TimerGen(TimeSpan time)
         {
-            if (time == TimeSpan.Zero) return; // Пропускаем нулевое время
+            if (time == TimeSpan.Zero) return;
 
             TimeSpan delay = checkday(time);
             Timer timer = new Timer(_ =>
@@ -31,19 +31,17 @@ namespace ShambersMicroServicesMultiSoft.ZvonokSoft.ZvonokServices
                 soundFunctions.PlayZvonok();
             }, null, delay, TimeSpan.FromHours(24));
 
-            activeTimers.Add(timer); // Сохраняем таймер
+            activeTimers.Add(timer);
         }
 
         public void TimerDefalut()
         {
-            // Очищаем старые таймеры
             foreach (var timer in activeTimers)
             {
                 timer?.Dispose();
             }
             activeTimers.Clear();
-
-            // Создаем новые таймеры
+            
             TimerGen(timeDefault.timeListStart[1]);
             TimerGen(timeDefault.timeListStart[2]);
             TimerGen(timeDefault.timeListStart[3]);
@@ -56,6 +54,15 @@ namespace ShambersMicroServicesMultiSoft.ZvonokSoft.ZvonokServices
             TimerGen(timeDefault.timeListEnd[4]);
             TimerGen(timeDefault.timeListEnd[5]);
             TimerGen(timeDefault.timeListEnd[6]);
+        }
+
+        public void TimerStop()
+        {
+            foreach (var timer in activeTimers)
+            {
+                timer?.Dispose();
+            }
+            activeTimers.Clear();
         }
     }
 }

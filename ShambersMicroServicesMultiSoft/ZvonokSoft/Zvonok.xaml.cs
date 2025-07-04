@@ -57,6 +57,7 @@ namespace ShambersMicroServicesMultiSoft.ZvonokSoft
             status.statusWork = "on";
             UpStatus();
             timeDefaultChecker.TimerDefalut();
+            timeDefaultChecker.TimerStop();
         }
 
         private void BtnAttention_Click(object sender, RoutedEventArgs e)
