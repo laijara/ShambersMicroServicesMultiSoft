@@ -89,6 +89,8 @@ namespace ShambersMicroServicesMultiSoft.ZvonokSoft
         {
             status.statusWork = "test";
             UpStatus();
+            timeDefaultChecker.TimerStop();
+            soundsFunc.PlayStop();
             soundsFunc.PlayZvonok();
         }
 
@@ -96,6 +98,7 @@ namespace ShambersMicroServicesMultiSoft.ZvonokSoft
         {
             status.statusWork = "test";
             UpStatus();
+            timeDefaultChecker.TimerStop();
             soundsFunc.PlayStop();
         }
 
@@ -103,6 +106,8 @@ namespace ShambersMicroServicesMultiSoft.ZvonokSoft
         {
             status.statusWork = "test";
             UpStatus();
+            timeDefaultChecker.TimerStop();
+            soundsFunc.PlayStop();
             soundsFunc.PlayAttention();
         }
     }
