@@ -58,6 +58,7 @@
     <Compile Include="ZvonokSoft\Zvonok.xaml.cs">
       <DependentUpon>Zvonok.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ZvonokSoft\ZvonokServices\Permanents\TextDefault.cs" />
     <Compile Include="ZvonokSoft\ZvonokServices\SoundFunctions.cs" />
     <Compile Include="ZvonokSoft\ZvonokServices\Permanents\SoundPaths.cs" />
     <Compile Include="ZvonokSoft\ZvonokServices\Status.cs" />

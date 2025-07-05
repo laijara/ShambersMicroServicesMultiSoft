@@ -9,6 +9,7 @@ namespace ShambersMicroServicesMultiSoft.ZvonokSoft
         private SoundFunctions soundsFunc = new SoundFunctions();
         private TimeDefault timeDefault = new TimeDefault();
         private TimeDefaultChecker timeDefaultChecker = new TimeDefaultChecker();
+        private TextDefault textDefault = new TextDefault();
 
         private void TimeUpStatus()
         {
@@ -18,18 +19,18 @@ namespace ShambersMicroServicesMultiSoft.ZvonokSoft
             TimeStart4.Text = timeDefault.timeListStart[4].ToString(@"h\:mm");
             TimeStart5.Text = timeDefault.timeListStart[5].ToString(@"h\:mm");
             TimeStart6.Text = timeDefault.timeListStart[6].ToString(@"h\:mm");
-            TimeStart7.Text = timeDefault.timeListStart[7].ToString(@"h\:mm");
-            TimeStart8.Text = timeDefault.timeListStart[8].ToString(@"h\:mm");
-            TimeStart9.Text = timeDefault.timeListStart[9].ToString(@"h\:mm");
+            TimeStart7.Text = textDefault.textBox[1];
+            TimeStart8.Text = textDefault.textBox[1];
+            TimeStart9.Text = textDefault.textBox[1];
             TimeEnd1.Text = timeDefault.timeListEnd[1].ToString(@"h\:mm");
             TimeEnd2.Text = timeDefault.timeListEnd[2].ToString(@"h\:mm");
             TimeEnd3.Text = timeDefault.timeListEnd[3].ToString(@"h\:mm");
             TimeEnd4.Text = timeDefault.timeListEnd[4].ToString(@"h\:mm");
             TimeEnd5.Text = timeDefault.timeListEnd[5].ToString(@"h\:mm");
             TimeEnd6.Text = timeDefault.timeListEnd[6].ToString(@"h\:mm");
-            TimeEnd7.Text = timeDefault.timeListEnd[7].ToString(@"h\:mm");
-            TimeEnd8.Text = timeDefault.timeListEnd[8].ToString(@"h\:mm");
-            TimeEnd9.Text = timeDefault.timeListEnd[9].ToString(@"h\:mm");
+            TimeEnd7.Text = textDefault.textBox[1];
+            TimeEnd8.Text = textDefault.textBox[1];
+            TimeEnd9.Text = textDefault.textBox[1];
         }
 
         private void UpStatus()

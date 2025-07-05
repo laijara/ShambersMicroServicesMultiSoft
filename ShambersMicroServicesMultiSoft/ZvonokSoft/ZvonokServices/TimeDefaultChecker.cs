@@ -23,8 +23,6 @@ namespace ShambersMicroServicesMultiSoft.ZvonokSoft.ZvonokServices
 
         private void TimerGen(TimeSpan time)
         {
-            if (time == TimeSpan.Zero) return;
-
             TimeSpan delay = checkday(time);
             Timer timer = new Timer(_ =>
             {
